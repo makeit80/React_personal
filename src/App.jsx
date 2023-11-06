@@ -27,6 +27,8 @@ function App() {
     } else {
       setInputList([...inputList, toDoList])
     }
+    setTitleQuery("")
+    setDetailQuery("")
   }
 
   // finish button
