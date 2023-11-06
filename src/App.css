@@ -1,38 +1,131 @@
-.App {
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* warpper */
+.warpper {
+  /* height: 93vh; */
+  width: 90vw;
+  min-width: 800px;
+  max-width: 1200px;
+
+  flex-direction: column;
+
+  border-radius: 50px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  box-shadow: 5px 5px 10px 2px rgb(220, 220, 220);
+}
+
+/* header */
+.header {
+  padding-top: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* input */
+.inputBox {
+  /* position: relative; */
+  width: inherit;
+  height: 200px;
+  min-width: 800px;
+  max-width: 1200px;
+  margin-top: 20px;
+  background-color: rgb(243, 243, 243);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  height: 25px;
+  width: 50vw;
+  max-width: 680px;
+  margin: 10px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+
+  color: rgb(55, 55, 55);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input:hover {
+  box-shadow: 1px 1px 5px 1px rgb(164, 164, 164);
+  transition: 0.5s;
+}
+
+
+
+.inputBtn {
+  height: 30px;
+  width: 15vw;
+  margin-top: 10px;
+  min-width: 50px;
+  max-width: 200px;
+  background-color: rgba(255, 255, 255, 0.648);
+  color: rgb(55, 55, 55);
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.inputBtn:hover {
+  /* background-color: rgb(178, 178, 178); */
+  /* color: rgb(230, 230, 230); */
+
+  box-shadow: 1px 1px 5px 1px rgb(164, 164, 164);
+  transition: 0.5s;
+}
+
+
+/* To do List */
+.container {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+  margin: 40px;
+  padding-bottom: 50px;
+}
+
+/* working */
+.workingBox {
+  height: 500px;
+  min-width: 800px;
+  max-width: 1200px;
+  margin-top: 30px;
+  overflow: auto;
+  overflow-x: hidden;
+
+}
+
+/* done */
+.doneBox {
+  height: 500px;
+  min-width: 800px;
+  max-width: 1200px;
+  margin-top: 30px;
+  overflow: auto;
+  overflow-x: hidden;
+
+}
+
+
+/* itme */
+.item {
+  min-width: 800px;
+  max-width: 1200px;
+  width: 90vw;
+  margin-top: 30px;
+
 }
